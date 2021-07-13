@@ -135,8 +135,8 @@ main {
   cursor: pointer;
 }
 .main-section .column img {
-  height: 40px;
-  width: auto;
+  width: 40px;
+  height: auto;
   margin-right: 15px;
 }
 .main-section .column a {
@@ -153,6 +153,13 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+footer a {
+  color: #959595;
+  font-size: 12px;
+}
+footer a:hover {
+  color: #0282F9;
+}
 
 .container-bg-img {
   background-image: url("../img/dc-logo-bg.png");
@@ -167,11 +174,18 @@ footer {
 .footer-top div {
   margin-right: 35px;
 }
+.footer-top ul {
+  list-style: none;
+}
+.footer-top ul a {
+  text-decoration: none;
+}
 
 .footer-bottom {
   height: 100px;
   background-color: #303030;
   font-size: 18px;
+  list-style: none;
 }
 .footer-bottom div {
   display: flex;
@@ -179,6 +193,7 @@ footer {
   justify-content: space-between;
 }
 .footer-bottom li {
+  text-decoration: none;
   display: inline-block;
   margin: 0 10px;
 }
@@ -188,14 +203,6 @@ h2 {
   font-size: 22px;
   text-transform: uppercase;
   margin-top: 10px;
-}
-
-a {
-  color: #959595;
-  font-size: 12px;
-}
-a:hover {
-  color: #0282F9;
 }
 
 ul {
@@ -224,4 +231,9 @@ h3 {
   color: #0282F9;
   text-transform: uppercase;
   margin: 30px;
+}
+
+.social img {
+  height: 30px;
+  width: 30px;
 }
