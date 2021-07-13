@@ -14,7 +14,7 @@
         <span class="load">load more</span>
     </div>
 
-    <section>
+    <section class="main-section">
         <div class="container">
 
             <div class="column">

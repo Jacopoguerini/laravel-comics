@@ -120,26 +120,26 @@ main {
   height: 100%;
 }
 
-section {
+.main-section {
   height: 120px;
   background-color: #0282F9;
 }
-section .container {
+.main-section .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-section .column {
+.main-section .column {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-section .column img {
+.main-section .column img {
   height: 40px;
   width: auto;
   margin-right: 15px;
 }
-section .column a {
+.main-section .column a {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
