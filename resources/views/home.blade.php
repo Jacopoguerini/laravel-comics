@@ -1,87 +1,42 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('main-content')
+    <div class="container container-flex">
+        <span class="label">current series</span>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-
-        <link rel="stylesheet" href="{{ asset("css/app.css") }}">
-    </head>
-    <body>
-
-        <header>
-            
-            <div class="container">
-                <!-- logo -->
-                <div class="logo">
-                    <a href="#">
-                        <img src="{{ asset("img/dc-logo.png") }}" alt="DC Logo">
-                    </a>
-                </div>
-                <!-- /logo -->
-    
-                <!-- nav -->
-                <nav>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Characters</a>
-                        </li>
-                        <li>
-                            <a href="#" class="active">Comics</a>
-                        </li>
-                        <li>
-                            <a href="#">Movies</a>
-                        </li>
-                        <li>
-                            <a href="#">TV</a>
-                        </li>
-                        <li>
-                            <a href="#">Games</a>
-                        </li>
-                        <li>
-                            <a href="#">Collectibles</a>
-                        </li>
-                        <li>
-                            <a href="#">Videos</a>
-                        </li>
-                        <li>
-                            <a href="#">Fans</a>
-                        </li>
-                        <li>
-                            <a href="#">News</a>
-                        </li>
-                        <li>
-                            <a href="#">Shop</a>
-                        </li>
-                        <li>
-                            <input type="text" placeholder="SEARCH">
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /nav -->
+            @foreach ($comics as $item)
+            <div class="series">
+                <img src="{{ $item["thumb"] }}" alt="{{ $item["title"] }}">
+                <h2>{{ $item["title"] }}</h2>
             </div>
+            @endforeach
 
-            <div id="jumbotron"></div>
-        </header>
+        <span class="load">load more</span>
+    </div>
 
-        <main>
-            <main>
-          
-                <div class="container container-flex">
-                    <span class="label">current series</span>
+    <section>
+        <div class="container">
 
-                    
-
-                    <span class="load">load more</span>
-                </div>
-          
-        </main>
-    </body>
-</html>
+            <div class="column">
+                <img src="{{ asset("../img/buy-comics-digital-comics.png") }}" alt=""/>
+                <a href="#">buy digital comics</a>
+            </div>
+            <div class="column">
+                <img src="{{ asset("../img/buy-comics-merchandise.png") }}" alt=""/>
+                <a href="#">dc merchandise</a>
+            </div>
+            <div class="column">
+                <img src="{{ asset("../img/buy-comics-subscriptions.png") }}" alt=""/>
+                <a href="#">subscription</a>
+            </div>
+            <div class="column">
+                    <img src="{{ asset("../img/buy-comics-shop-locator.png") }}" alt=""/>
+                    <a href="#">comic shop locator</a>
+            </div>
+            <div class="column">
+                <img src="{{ asset("../img/buy-dc-power-visa.svg") }}" alt=""/>
+                <a href="#">dc power visa</a>
+            </div>                    
+        </div>   
+    </section>
+@endsection

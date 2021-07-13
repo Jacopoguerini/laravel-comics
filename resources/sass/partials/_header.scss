@@ -1,7 +1,11 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 140px;
+    }
 }
 
 .list-inline {
@@ -31,10 +35,6 @@
     }
 }
 
-header {
-    height: 140px;
-}
-
 img {
     width: 80px;
     height: 80px;
@@ -44,4 +44,5 @@ img {
     height: 400px;
     background-image: url('../img/jumbotron.jpg');
     background-position-x: center;
+    display: block;
 }
