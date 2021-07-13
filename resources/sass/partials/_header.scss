@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-inline {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $brandColor;
+            font-weight: 700;
+            &:hover {
+                color: $brandBlue;
+            }
+        }
+
+        .active {
+            border-bottom: 5px solid $brandBlue;
+            padding-bottom: 55px;
+            color: $brandBlue;
+        }
+    }
+}
+
+header {
+    height: 140px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
