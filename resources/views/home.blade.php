@@ -17,6 +17,7 @@
     <body>
 
         <header>
+            
             <div class="container">
                 <!-- logo -->
                 <div class="logo">
@@ -66,7 +67,21 @@
                 </nav>
                 <!-- /nav -->
             </div>
+
+            <div id="jumbotron"></div>
         </header>
 
+        <main>
+            <main>
+          
+                <div class="container container-flex">
+                    <span class="label">current series</span>
+
+                    
+
+                    <span class="load">load more</span>
+                </div>
+          
+        </main>
     </body>
 </html>
