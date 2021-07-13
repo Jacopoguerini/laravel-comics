@@ -108,6 +108,9 @@
                 <!-- /third column -->
             </section>
             <!-- /footer top -->
+            <div class="copyright">
+                <small>All Site Content TM and © 2020 DC Entertainment, unless otherwise <a>noted here</a>. All rights reserved.<br><a>Cookies Settings</a></small>
+            </div>
         </div>
     
         <!-- footer bottom -->

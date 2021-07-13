@@ -19,7 +19,7 @@ footer {
 }
 
 .footer-top {
-    padding: 50px 0;
+    padding: 50px 0 10px 0;
     display: flex;
     div {
         margin-right: 35px;
@@ -88,5 +88,19 @@ h3 {
     img {
         height: 30px;
         width: 30px;
+    }
+}
+.copyright {
+    padding-bottom: 50px;
+    small {
+        color: #959595;
+        font-size: 12px;
+        a {
+            color: $brandBlue;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
     }
 }
